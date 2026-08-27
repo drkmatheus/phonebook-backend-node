@@ -1,13 +1,23 @@
 GET http://localhost:3001/api/persons
 ###
-DELETE http://localhost:3001/api/persons/4
+GET http://localhost:3001/api/persons/asdasasd/as3
+###
+DELETE http://localhost:3001/api/persons/6a9077a9b8658f7f8db606a9
 ###
 POST http://localhost:3001/api/persons
 content-type: application/json
 
 {
-    "name":"Teste",
+    "name":"Perninha",
     "number":"34234234"
+}
+###
+PUT http://localhost:3001/api/persons/6a9077a9b8658f7f8
+content-type: application/json
+
+{
+    "name":"J. J. Jr",
+    "number": "09-47382"
 }
 ###
 GET https://phonebook-backend-msww.onrender.com/api/persons
